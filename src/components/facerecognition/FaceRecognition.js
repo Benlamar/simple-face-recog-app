@@ -1,0 +1,15 @@
+import React from 'react';
+import './FaceRecognition.css';
+
+const FaceRecognition = ({imageURL, box}) =>{
+    return(<div className="center">
+        <div className="image-container pa2 tc relative">
+            <img id='inputimage' src={imageURL} alt="Recognition Face" style={{maxHeight: '240px'}}/>
+            <div className='bounding-box' style={{top:box.topRow,
+                right:box.rightCol, bottom:box.bottomRow, left:box.leftCol}}></div>
+        </div>
+    </div>);
+}
+
+
+export default FaceRecognition;
