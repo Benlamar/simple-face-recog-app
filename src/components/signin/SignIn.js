@@ -18,7 +18,6 @@ class SignIn extends React.Component {
     }
     
     onSubmitSignIn = () => {
-        console.log(this.state);
         fetch('https://boiling-mesa-34170.herokuapp.com/signin', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
